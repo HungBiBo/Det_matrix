@@ -11,7 +11,7 @@ def slice_matrix(a,n):
         del a1[i][n]
     return a1
 
-def det2(a):
+def det_matrix(a):
     det = 0
     if len(a) == 3:
         tong = 0
@@ -33,7 +33,7 @@ def det2(a):
         return a[0][0]
     else:
         for x in range(0,len(a)):
-            det += det2(slice_matrix(a,x))* ((-1)**x) * a[0][x] 
+            det += det_matrix(slice_matrix(a,x))* ((-1)**x) * a[0][x] 
         return det
     
-print(det2(a))
+print(det_matrix(a))
