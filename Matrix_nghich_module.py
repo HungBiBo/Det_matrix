@@ -20,7 +20,7 @@ def matrix_dao(a):
     a1 = deepcopy(a)
     a2 = matrix_chuyen_vi(phu_dai_so_C(a))
     if Det_matrix_module.det_matrix(a)== 0:
-        return "Ma trận không nghịch đảo"
+        return "Ma trận không có nghịch đảo"
     else:
         for i in range(len(a)):
             for j in range(len(a)):
