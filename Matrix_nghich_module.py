@@ -19,8 +19,11 @@ def matrix_chuyen_vi(a):
 def matrix_dao(a):
     a1 = deepcopy(a)
     a2 = matrix_chuyen_vi(phu_dai_so_C(a))
-    for i in range(len(a)):
-        for j in range(len(a)):
-            a1[i][j] = a2[i][j] / Det_matrix_module.det_matrix(a)
-    return a1
+    if Det_matrix_module.det_matrix(a)== 0:
+        return "Ma trận không nghịch đảo"
+    else:
+        for i in range(len(a)):
+            for j in range(len(a)):
+                a1[i][j] = a2[i][j] / Det_matrix_module.det_matrix(a)
+        return a1
 
