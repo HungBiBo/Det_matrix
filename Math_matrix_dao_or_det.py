@@ -1,6 +1,8 @@
+#tính toán ở đây nhá các bạn
+
 from copy import deepcopy
-import Det_matrix_module
-import Matrix_nghich_module
+import Det_matrix_module #tính Det của ma trận
+import Matrix_nghich_module #tìm ma trận nghịch đảo
 
 def nhap_matrix():
     n = int(input("Nhập cỡ ma trận: "))
@@ -14,3 +16,5 @@ def nhap_matrix():
         print(ma)
         print("----------")
     return ma
+
+#print(Matrix_nghich_module.matrix_dao(nhap_matrix()))
