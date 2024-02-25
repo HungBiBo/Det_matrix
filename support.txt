@@ -3,3 +3,4 @@ Chương trình chính: File Math_matrix_dao_or_det
     Tính Det ma trận: Det_matrix_module.det_matrix(a,i,j)
     Tìm ma trận nghịch đảo: Matrix_nghich_module.matrix_dao(a)
     Tìm ma trận chuyển vị: Matrix_nghich_module.matrix_chuyen_vi(a)
+    Ma trận con của A tức Mij: Det_matrix_module.slice_matrix(nhap_matrix(),i,j)
