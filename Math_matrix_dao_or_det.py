@@ -17,4 +17,5 @@ def nhap_matrix():
         print("----------")
     return ma
 
-#print(Matrix_nghich_module.matrix_dao(nhap_matrix()))
+
+print(Matrix_nghich_module.matrix_dao(nhap_matrix()))
