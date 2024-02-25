@@ -6,7 +6,7 @@ def phu_dai_so_C(a): #Phụ đại số của A
     a2 = deepcopy(a)
     for i in range(0,len(a)):
         for j in range(0,len(a)):
-            a2[i][j] = Det_matrix_module.det_matrix(Det_matrix_module.slice_matrix(a1,i,j)) * (-1)**(i+j)
+            a2[i][j] = Det_matrix_module.det_matrix(Det_matrix_module.slice_matrix(a1,i+1,j+1)) * (-1)**(i+j)
     return a2
 
 def matrix_chuyen_vi(a): #Ma trận chuyển vị của phụ đại số
