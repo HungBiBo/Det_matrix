@@ -17,6 +17,8 @@ def nhap_matrix():
         print("----------")
     return ma
 
-#print(Matrix_nghich_module.matrix_dao(nhap_matrix()))
-#print(Det_matrix_module.det_matrix(nhap_matrix()))
-#print(Matrix_nghich_module.matrix_chuyen_vi(nhap_matrix()))
+a = nhap_matrix()
+print(Matrix_nghich_module.matrix_dao(a))
+print(Det_matrix_module.det_matrix(a))
+print(Matrix_nghich_module.matrix_chuyen_vi(a))
+print(Det_matrix_module.slice_matrix(a,1,1))
